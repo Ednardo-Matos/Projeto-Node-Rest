@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Ednardo-Matos/Projeto-Node-Rest/issues"
   },
-  "homepage": "https://github.com/Ednardo-Matos/Projeto-Node-Rest#readme"
+  "homepage": "https://github.com/Ednardo-Matos/Projeto-Node-Rest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "save-dev": "0.0.1-security"
+  }
 }
