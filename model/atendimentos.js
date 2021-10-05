@@ -1,3 +1,4 @@
+const atendimentos = require('../controllers/atendimentos')
 const conexao = require('../infraestrutura/conexao')
 
 
@@ -6,7 +7,7 @@ class Atendimento{
 
         const sql = 'INSERT INTO Atendimentos SET ?'
 
-        conexao.query(sql, atendimento, (erro) => {
+        conexao.query(sql, atendimento, (erro, resultados) => {
             if(erro){
             console.log(erro)
             }else{
@@ -14,4 +15,6 @@ class Atendimento{
             }
         })
     }
-}//dddddd
+}
+
+module.exports = new Atendimento
